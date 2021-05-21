@@ -1,0 +1,290 @@
+site_name: clang-format
+site_url: https://tqfx.org/clang-format
+site_description: clang-format的配置文档
+site_author: llvm
+# site_favicon: favicon.ico
+copyright: 'Copyright &copy; llvm'
+# google_analytics:
+
+repo_name: 'GitHub'
+repo_url: 'https://github.com/tqfx/clang-format'
+remote_name: origin
+remote_branch: gh-pages
+edit_uri: 'edit/master/docs/'
+
+docs_dir: docs
+site_dir: site
+dev_addr: '127.0.0.1:8080'
+
+markdown_extensions:
+  - meta
+  - toc:
+      permalink: true
+
+  - abbr              # *[TEXT]: ...
+  - pymdownx.snippets # --8<--
+
+  - admonition            # !!! note "title"
+  - pymdownx.details      # ??? note
+  - pymdownx.superfences  # !!! note inline end
+
+  - attr_list # [text](#){ .md-button }
+
+  - pymdownx.inlinehilite # `#!c int`
+  - pymdownx.highlight:   # ```
+      linenums: true
+      linenums_style: pymdownx.inline
+
+  - pymdownx.tabbed # ===
+
+  - footnotes # [^1]
+
+  - pymdownx.critic # {}
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.betterem:
+      smart_enable: all
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - def_list # - [x]
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: false
+
+  - pymdownx.arithmatex: # $$
+      generic: true
+
+  - pymdownx.smartsymbols
+
+# theme_dir:
+theme:
+  name: material
+  custom_dir: overrides
+  language: 'zh'
+  highlightjs: true
+  logo:
+  favicon:
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.highlight
+    - header.autohide
+  palette:
+    # Light mode
+    - red: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+  - search
+  - git-revision-date
+  - with-pdf:
+      #author: site_author
+      #copyright: copyright
+      #
+      #cover: false
+      #back_cover: true
+      #cover_title: site_name
+      cover_subtitle: clang-format的配置文档
+      #cover_logo: None
+      #
+      toc_title: 目录
+      #heading_shift: false
+      #toc_level: 3
+      #ordered_chapter_level: 2
+      #
+      #render_js: true
+      #headless_chrome_path: chromedriver
+      #
+      output_path: index.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
+      #custom_template_path: TEMPLATES PATH
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tqfx/
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/tqfx/clang-format
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sutqfx
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/tqfx/
+  alternate:
+    # Switch to English
+    - name: English
+      link: /en/
+      lang: en
+  version:
+    default: latest
+
+extra_css:
+#- https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - css/default.css
+
+extra_javascript:
+# mathjax
+#- https://polyfill.io/v3/polyfill.min.js?features=es6
+  - javascripts/polyfill.js
+#- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/tex-mml-chtml.js
+# highlight
+#- https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - javascripts/highlight.js
+# table
+#- https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+
+nav:
+  - 使用:
+    - index.md 
+    - ConfiguringStyle.md
+    - DisableOnCode.md
+  - 配置:
+    - BasedOnStyle.md
+    - AccessModifierOffset.md
+    - AlignAfterOpenBracket.md
+    - AlignConsecutiveAssignments.md
+    - AlignConsecutiveBitFields.md
+    - AlignConsecutiveDeclarations.md
+    - AlignConsecutiveMacros.md
+    - AlignEscapedNewlines.md
+    - AlignOperands.md
+    - AlignTrailingComments.md
+    - AllowAllArgumentsOnNextLine.md
+    - AllowAllConstructorInitializersOnNextLine.md
+    - AllowAllParametersOfDeclarationOnNextLine.md
+    - AllowShortBlocksOnASingleLine.md
+    - AllowShortCaseLabelsOnASingleLine.md
+    - AllowShortEnumsOnASingleLine.md
+    - AllowShortFunctionsOnASingleLine.md
+    - AllowShortIfStatementsOnASingleLine.md
+    - AllowShortLambdasOnASingleLine.md
+    - AllowShortLoopsOnASingleLine.md
+    - AlwaysBreakAfterDefinitionReturnType.md
+    - AlwaysBreakAfterReturnType.md
+    - AlwaysBreakBeforeMultilineStrings.md
+    - AlwaysBreakTemplateDeclarations.md
+    - AttributeMacros.md
+    - BinPackArguments.md
+    - BinPackParameters.md
+    - BitFieldColonSpacing.md
+    - BraceWrapping.md
+    - BreakAfterJavaFieldAnnotations.md
+    - BreakBeforeBinaryOperators.md
+    - BreakBeforeBraces.md
+    - BreakBeforeConceptDeclarations.md
+    - BreakBeforeTernaryOperators.md
+    - BreakConstructorInitializers.md
+    - BreakInheritanceList.md
+    - BreakStringLiterals.md
+    - ColumnLimit.md
+    - CommentPragmas.md
+    - CompactNamespaces.md
+    - ConstructorInitializerAllOnOneLineOrOnePerLine.md
+    - ConstructorInitializerIndentWidth.md
+    - ContinuationIndentWidth.md
+    - Cpp11BracedListStyle.md
+    - DeriveLineEnding.md
+    - DerivePointerAlignment.md
+    - DisableFormat.md
+    - EmptyLineBeforeAccessModifier.md
+    - ExperimentalAutoDetectBinPacking.md
+    - FixNamespaceComments.md
+    - ForEachMacros.md
+    - IncludeBlocks.md
+    - IncludeCategories.md
+    - IncludeIsMainRegex.md
+    - IncludeIsMainSourceRegex.md
+    - IndentAccessModifiers.md
+    - IndentCaseBlocks.md
+    - IndentCaseLabels.md
+    - IndentExternBlock.md
+    - IndentGotoLabels.md
+    - IndentPPDirectives.md
+    - IndentRequires.md
+    - IndentWidth.md
+    - IndentWrappedFunctionNames.md
+    - InsertTrailingCommas.md
+    - JavaImportGroups.md
+    - JavaScriptQuotes.md
+    - JavaScriptWrapImports.md
+    - KeepEmptyLinesAtTheStartOfBlocks.md
+    - Language.md
+    - MacroBlockBegin.md
+    - MacroBlockEnd.md
+    - MaxEmptyLinesToKeep.md
+    - NamespaceIndentation.md
+    - NamespaceMacros.md
+    - ObjCBinPackProtocolList.md
+    - ObjCBlockIndentWidth.md
+    - ObjCBreakBeforeNestedBlockParam.md
+    - ObjCSpaceAfterProperty.md
+    - ObjCSpaceBeforeProtocolList.md
+    - PenaltyBreakAssignment.md
+    - PenaltyBreakBeforeFirstCallParameter.md
+    - PenaltyBreakComment.md
+    - PenaltyBreakFirstLessLess.md
+    - PenaltyBreakString.md
+    - PenaltyBreakTemplateDeclaration.md
+    - PenaltyExcessCharacter.md
+    - PenaltyIndentedWhitespace.md
+    - PenaltyReturnTypeOnItsOwnLine.md
+    - PointerAlignment.md
+    - RawStringFormats.md
+    - ReflowComments.md
+    - ShortNamespaceLines.md
+    - SortIncludes.md
+    - SortJavaStaticImport.md
+    - SortUsingDeclarations.md
+    - SpaceAfterCStyleCast.md
+    - SpaceAfterLogicalNot.md
+    - SpaceAfterTemplateKeyword.md
+    - SpaceAroundPointerQualifiers.md
+    - SpaceBeforeAssignmentOperators.md
+    - SpaceBeforeCaseColon.md
+    - SpaceBeforeCpp11BracedList.md
+    - SpaceBeforeCtorInitializerColon.md
+    - SpaceBeforeInheritanceColon.md
+    - SpaceBeforeParens.md
+    - SpaceBeforeRangeBasedForLoopColon.md
+    - SpaceBeforeSquareBrackets.md
+    - SpaceInEmptyBlock.md
+    - SpaceInEmptyParentheses.md
+    - SpacesBeforeTrailingComments.md
+    - SpacesInAngles.md
+    - SpacesInCStyleCastParentheses.md
+    - SpacesInConditionalStatement.md
+    - SpacesInContainerLiterals.md
+    - SpacesInLineCommentPrefix.md
+    - SpacesInParentheses.md
+    - SpacesInSquareBrackets.md
+    - Standard.md
+    - StatementAttributeLikeMacros.md
+    - StatementMacros.md
+    - TabWidth.md
+    - TypenameMacros.md
+    - UseCRLF.md
+    - UseTab.md
+    - WhitespaceSensitiveMacros.md
+    
+

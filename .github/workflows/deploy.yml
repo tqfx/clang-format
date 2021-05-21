@@ -1,0 +1,77 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install
+        run: |
+          sudo apt-get install -f -q -qq -y \
+          build-essential \
+          python3-dev \
+          python3-pip \
+          python3-setuptools \
+          python3-wheel \
+          python3-cffi \
+          libcairo2 \
+          libpango-1.0-0 \
+          libpangocairo-1.0-0 \
+          libgdk-pixbuf2.0-0 \
+          libffi-dev \
+          shared-mime-info
+          sudo apt-get install -f -q -qq -y fonts-wqy-microhei
+          python3 -m pip install --quiet --upgrade pip
+          python3 -m pip install --quiet --requirement requirement.txt
+
+      - name: "Build"
+        env:
+          ENABLE_PDF_EXPORT: 1
+          output: build
+        shell: bash
+        run: |
+          echo "build..."
+          python3 -m mkdocs build -d $output
+          echo "remove..."
+          for i in `ls -A`; do \
+          if [ "$i" == ".git" ]; then continue; fi;\
+          if [ "$i" == "$output" ]; then continue; fi;\
+          rm -rf $i; done
+          echo "move..."
+          for i in `ls -A $output`; do \
+          mv -t . $output/$i; done
+          rmdir $output
+
+      - name: Push
+        env:
+          GPG_PRIVATE: ${{ secrets.GPG_ACTION_PRIVATE }}
+          GPG_ID: ${{ secrets.GPG_ACTION_ID }}
+          branch: gh-pages
+        shell: bash
+        run: |
+          git config user.name       "github-actions[bot]"
+          git config user.email      "59302530+tqfx@users.noreply.github.com"
+          git config user.signingkey $GPG_ID
+          git config commit.gpgsign  true
+          git config core.autocrlf   input
+          git config core.quotepath  false
+          git config core.filemode   false
+          git config core.ignorecase false
+          git config --list
+          git checkout --quiet --orphan $branch
+          git add --all
+          echo "$GPG_PRIVATE" > $GPG_ID && gpg --import $GPG_ID && rm $GPG_ID
+          git commit --quiet --signoff --message $(git rev-parse origin/master)
+          git push --force origin $branch

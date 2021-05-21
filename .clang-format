@@ -1,0 +1,61 @@
+---
+Language:        Cpp
+BasedOnStyle:    LLVM
+
+AlignConsecutiveMacros: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+
+AlignEscapedNewlines: Left
+
+AllowAllArgumentsOnNextLine: false
+AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortLambdasOnASingleLine: None
+
+AlwaysBreakTemplateDeclarations: Yes
+
+BinPackArguments: false
+BinPackParameters: false
+
+BreakBeforeBraces: Allman
+BreakInheritanceList: AfterColon
+BreakConstructorInitializers: AfterColon
+
+ColumnLimit:     0
+DerivePointerAlignment: true
+FixNamespaceComments: false
+
+IncludeBlocks:   Regroup
+
+IndentExternBlock: NoIndent
+IndentWidth:     4
+
+InsertTrailingCommas: Wrapped
+
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+
+ObjCBlockIndentWidth: 4
+ObjCSpaceBeforeProtocolList: false
+
+ReflowComments:  false
+
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: false
+SpacesBeforeTrailingComments: 2
+SpacesInContainerLiterals: false
+
+Standard:        Latest
+TabWidth:        4
+UseCRLF:         false
+UseTab:          Never
+...
+
