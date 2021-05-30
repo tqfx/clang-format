@@ -3,9 +3,9 @@ Language:        Cpp
 BasedOnStyle:    LLVM
 
 AlignConsecutiveMacros: true
-AlignConsecutiveAssignments: true
 AlignConsecutiveBitFields: true
-AlignConsecutiveDeclarations: true
+# AlignConsecutiveAssignments: true
+# AlignConsecutiveDeclarations: true
 
 AlignEscapedNewlines: Left
 
@@ -58,4 +58,3 @@ TabWidth:        4
 UseCRLF:         false
 UseTab:          Never
 ...
-
