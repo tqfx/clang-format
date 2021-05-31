@@ -8,6 +8,7 @@ AlignConsecutiveBitFields: true
 # AlignConsecutiveDeclarations: true
 
 AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
 
 AllowAllArgumentsOnNextLine: false
 AllowAllConstructorInitializersOnNextLine: false
@@ -27,23 +28,16 @@ BreakInheritanceList: AfterColon
 BreakConstructorInitializers: AfterColon
 
 ColumnLimit:     0
-DerivePointerAlignment: true
 FixNamespaceComments: false
-
-IncludeBlocks:   Regroup
 
 IndentExternBlock: NoIndent
 IndentWidth:     4
 
-InsertTrailingCommas: Wrapped
-
 KeepEmptyLinesAtTheStartOfBlocks: false
 
-MaxEmptyLinesToKeep: 1
 NamespaceIndentation: All
 
 ObjCBlockIndentWidth: 4
-ObjCSpaceBeforeProtocolList: false
 
 ReflowComments:  false
 
@@ -53,8 +47,5 @@ SpaceBeforeInheritanceColon: false
 SpacesBeforeTrailingComments: 2
 SpacesInContainerLiterals: false
 
-Standard:        Latest
 TabWidth:        4
-UseCRLF:         false
-UseTab:          Never
 ...
