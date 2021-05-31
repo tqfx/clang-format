@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install
+      - name: Setup
         shell: bash
         run: |
           sudo apt-get install -f -q -qq -y \
@@ -39,7 +39,7 @@ jobs:
           shared-mime-info \
           fonts-wqy-microhei
           python3 -m pip install --quiet --upgrade pip
-          python3 -m pip install --quiet --requirement requirement.txt
+          python3 -m pip install --quiet --requirement requirements.txt
 
       - name: Build
         shell: bash
