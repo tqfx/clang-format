@@ -156,7 +156,7 @@ extra_javascript:
 
 nav:
   - 使用:
-    - index.md 
+    - index.md
     - ConfiguringStyle.md
     - DisableOnCode.md
   - 配置:

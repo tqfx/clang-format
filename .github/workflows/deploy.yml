@@ -15,6 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
@@ -45,35 +47,16 @@ jobs:
         shell: bash
         env:
           ENABLE_PDF_EXPORT: 1
-          output: build
+          OUTPUT: build
         run: |
-          python3 -m mkdocs build --quiet --site-dir $output
-          for i in `ls -A`; do \
-          if [ "$i" == ".git" ]; then continue; fi;\
-          if [ "$i" == "$output" ]; then continue; fi;\
-          rm -rf $i; done
-          for i in `ls -A $output`; do \
-          mv -t . $output/$i; done
-          rmdir $output
+          python3 -m mkdocs build --quiet --site-dir $OUTPUT
 
       - name: Deploy
         shell: bash
         env:
-          GPG_KEY: ${{ secrets.COMMIT_GPG_KEY }}
-          GPG_ID: ${{ secrets.COMMIT_GPG_ID }}
-          branch: gh-pages
+          COMMIT_GPG_KEY: ${{ secrets.COMMIT_GPG_KEY }}
+          COMMIT_GPG_ID: ${{ secrets.COMMIT_GPG_ID }}
+          BRANCH: gh-pages
         run: |
-          git config user.name       "github-actions[bot]"
-          git config user.email      "59302530+tqfx@users.noreply.github.com"
-          git config user.signingkey $GPG_ID
-          git config commit.gpgsign  true
-          git config core.autocrlf   input
-          git config core.quotepath  false
-          git config core.filemode   false
-          git config core.ignorecase false
-          git config --list
-          git checkout --quiet --orphan $branch
-          git add --all
-          echo "$GPG_KEY" > $GPG_ID && gpg --import $GPG_ID && rm $GPG_ID
-          git commit --quiet --signoff --message $(git rev-parse origin/master)
-          git push --force origin $branch
+          bash scripts/gh-config.sh
+          bash scripts/gh-deploy.sh build LICENSE
