@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 OUTPUT=".git"
-COMMIT="$(TZ='Asia/Shanghai' date +%Y/%m/%d\ %H:%M:%S) $(git rev-parse origin/master)"
+COMMIT="$(TZ='Asia/Shanghai' date -Is) $(git rev-parse origin/master)"
 
 if [ "$BRANCH" ]
 then
