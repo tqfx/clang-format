@@ -2,4 +2,3 @@ mkdocs
 mkdocs-material
 mkdocs-git-revision-date-plugin
 mkdocs-with-pdf
-

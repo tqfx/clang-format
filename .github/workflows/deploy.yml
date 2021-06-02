@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,24 +24,24 @@ jobs:
 
       - name: Setup
         shell: bash
+        env:
+          COMMIT_GPG_KEY: ${{ secrets.COMMIT_GPG_KEY }}
+          COMMIT_GPG_ID: ${{ secrets.COMMIT_GPG_ID }}
         run: |
           git clone https://github.com/tqfx/scripts.git gh-scripts
+          bash gh-scripts/gh-config.sh
           bash gh-scripts/pip-mkdocs.sh requirements.txt
 
       - name: Build
         shell: bash
         env:
           ENABLE_PDF_EXPORT: 1
-          OUTPUT: build
         run: |
-          python3 -m mkdocs build --quiet --site-dir $OUTPUT
+          python3 -m mkdocs build --quiet --site-dir build
 
       - name: Deploy
         shell: bash
         env:
-          COMMIT_GPG_KEY: ${{ secrets.COMMIT_GPG_KEY }}
-          COMMIT_GPG_ID: ${{ secrets.COMMIT_GPG_ID }}
           BRANCH: gh-pages
         run: |
-          bash gh-scripts/gh-config.sh
           bash gh-scripts/gh-deploy.sh build LICENSE
