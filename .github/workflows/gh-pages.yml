@@ -1,25 +1,18 @@
 name: gh-pages
-
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-  workflow_dispatch:
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
         with:
           python-version: "3.x"
-
       - run: |
           sudo apt-get install -f -q -qq -y \
           build-essential \
@@ -31,12 +24,11 @@ jobs:
           python3 -m mkdocs build --quiet --site-dir build
         env:
           ENABLE_PDF_EXPORT: 1
-
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: build
-          force_orphan: true
           commit_message: ${{ github.event.head_commit.message }}
           disable_nojekyll: true
+          publish_branch: gh-pages
+          force_orphan: true
+          publish_dir: build
