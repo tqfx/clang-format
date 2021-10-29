@@ -1,51 +1,51 @@
 ---
-BasedOnStyle:    LLVM
-
+BasedOnStyle: LLVM
+AccessModifierOffset: -4
 AlignConsecutiveMacros: true
 AlignConsecutiveBitFields: true
 # AlignConsecutiveAssignments: true
 # AlignConsecutiveDeclarations: true
-
 AlignEscapedNewlines: Left
 AlignOperands: AlignAfterOperator
-
 AllowAllArgumentsOnNextLine: false
 AllowAllConstructorInitializersOnNextLine: false
 AllowAllParametersOfDeclarationOnNextLine: false
-
 AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
-
 AlwaysBreakTemplateDeclarations: Yes
-
-BinPackArguments: false
-BinPackParameters: false
-
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Custom
 BreakInheritanceList: AfterColon
 BreakConstructorInitializers: AfterColon
-
-ColumnLimit:     0
+BraceWrapping:
+  AfterEnum: true
+  AfterClass: true
+  AfterUnion: true
+  AfterStruct: true
+  AfterFunction: true
+  AfterCaseLabel: true
+  AfterNamespace: true
+  AfterExternBlock: true
+  AfterControlStatement: true
+  BeforeElse: true
+  BeforeCatch: true
+  BeforeWhile: true
+  SplitEmptyRecord: false
+  SplitEmptyFunction: false
+  SplitEmptyNamespace: false
+ColumnLimit: 0
 FixNamespaceComments: false
-
 IndentExternBlock: NoIndent
-IndentWidth:     4
-
+IndentWidth: 4
 KeepEmptyLinesAtTheStartOfBlocks: false
-
 NamespaceIndentation: All
-
 ObjCBlockIndentWidth: 4
-
-ReflowComments:  false
-SortIncludes:    false
-
+ReflowComments: false
+SortIncludes: false
 SpaceBeforeCpp11BracedList: true
 SpaceBeforeCtorInitializerColon: false
 SpaceBeforeInheritanceColon: false
 SpacesBeforeTrailingComments: 2
 SpacesInContainerLiterals: false
-
-TabWidth:        4
+TabWidth: 4
 ...
