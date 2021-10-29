@@ -29,7 +29,6 @@ BraceWrapping:
   AfterControlStatement: true
   BeforeElse: true
   BeforeCatch: true
-  BeforeWhile: true
   SplitEmptyRecord: false
   SplitEmptyFunction: false
   SplitEmptyNamespace: false
