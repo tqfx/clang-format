@@ -1,4 +1,5 @@
-mkdocs
-mkdocs-material
-mkdocs-git-revision-date-plugin
-mkdocs-with-pdf
+mkdocs # https://github.com/mkdocs/mkdocs
+mkdocs-material # https://github.com/squidfunk/mkdocs-material
+mkdocs-with-pdf # https://github.com/orzih/mkdocs-with-pdf
+beautifulsoup4<=4.9.3 # https://github.com/orzih/mkdocs-with-pdf/issues/79
+mkdocs-git-revision-date-plugin # https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin

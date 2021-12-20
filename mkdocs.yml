@@ -1,90 +1,104 @@
-site_name: clang-format
+site_name: ClangFormat
 site_url: https://tqfx.org/clang-format
-site_description: clang-format的配置文档
-site_author: llvm
-# site_favicon: favicon.ico
-copyright: 'Copyright &copy; llvm'
-# google_analytics:
+site_description: 配置文档
+site_author: The Clang Team
+copyright: 'Copyright &copy; The Clang Team.'
+google_analytics:
 
-repo_name: 'GitHub'
-repo_url: 'https://github.com/tqfx/clang-format'
+repo_name: GitHub
+repo_url: https://github.com/tqfx/clang-format
 remote_name: origin
 remote_branch: gh-pages
-edit_uri: 'edit/master/docs/'
+edit_uri: edit/master/docs
 
 docs_dir: docs
 site_dir: site
-dev_addr: '127.0.0.1:8080'
+dev_addr: 127.0.0.1:8080
 
+#https://facelessuser.github.io/pymdown-extensions/extensions
 markdown_extensions:
-  - meta
   - toc:
       permalink: true
-
+  #https://squidfunk.github.io/mkdocs-material/reference/abbreviations
   - abbr              # *[TEXT]: ...
   - pymdownx.snippets # --8<--
-
+  #https://squidfunk.github.io/mkdocs-material/reference/admonitions
   - admonition            # !!! note "title"
   - pymdownx.details      # ??? note
   - pymdownx.superfences  # !!! note inline end
-
+  #https://squidfunk.github.io/mkdocs-material/reference/buttons
   - attr_list # [text](#){ .md-button }
-
+  #https://squidfunk.github.io/mkdocs-material/reference/code-blocks
   - pymdownx.inlinehilite # `#!c int`
   - pymdownx.highlight:   # ```
       linenums: false
       linenums_style: pymdownx.inline
-
-  - pymdownx.tabbed # ===
-
+  #https://squidfunk.github.io/mkdocs-material/reference/content-tabs
+  - pymdownx.tabbed: # ===
+      alternate_style: true
+  #https://squidfunk.github.io/mkdocs-material/reference/data-tables
+  - tables
+  #https://squidfunk.github.io/mkdocs-material/reference/footnotes
   - footnotes # [^1]
-
+  #https://squidfunk.github.io/mkdocs-material/reference/formatting
   - pymdownx.critic # {}
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.betterem:
+  - pymdownx.caret  # ^
+  - pymdownx.keys   # +
+  - pymdownx.mark   # =
+  - pymdownx.tilde  # ~
+  - pymdownx.betterem: # *
       smart_enable: all
-
-  - pymdownx.emoji:
+  #https://squidfunk.github.io/mkdocs-material/reference/icons-emojis
+  - pymdownx.emoji: # :smile:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  #https://squidfunk.github.io/mkdocs-material/reference/images
+  - md_in_html
+  #https://squidfunk.github.io/mkdocs-material/reference/lists
   - def_list # - [x]
   - pymdownx.tasklist:
       custom_checkbox: false
       clickable_checkbox: false
-
+  #https://squidfunk.github.io/mkdocs-material/reference/mathjax
   - pymdownx.arithmatex: # $$
       generic: true
-
-  - pymdownx.smartsymbols
+  #https://squidfunk.github.io/mkdocs-material/reference/meta-tags
+  - meta
+  #https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions
+  - pymdownx.smartsymbols # (c)
 
 # theme_dir:
 theme:
   name: material
-  custom_dir: overrides
-  language: 'zh'
-  highlightjs: true
-  logo:
-  favicon:
-  icon:
+  language: zh
+  logo: image/favicon.png
+  favicon: image/favicon.ico
+  icon: # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon
     repo: fontawesome/brands/github
   features:
+    #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigations
     - navigation.instant
+    - navigation.tracking
     - navigation.tabs
+    - navigation.top
+    #https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+    - search.suggest
     - search.highlight
+    - search.share
+    #https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/#automatic-hiding
     - header.autohide
+    #https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=annotate#code-annotations
+    - content.code.annotate
   palette:
-    # Light mode
-    - red: "(prefers-color-scheme: light)"
+    #Light mode
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    # Dark mode
+    #Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -95,30 +109,35 @@ theme:
 
 plugins:
   - search
-  - git-revision-date
-  - with-pdf:
-      #author: site_author
-      #copyright: copyright
+  - git-revision-date: # https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin
+      enabled_if_env: CI # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
+  - with-pdf: # https://github.com/orzih/mkdocs-with-pdf
+      # author: site_author
+      # copyright: copyright
       #
-      #cover: false
-      #back_cover: true
-      #cover_title: site_name
-      cover_subtitle: clang-format的配置文档
-      #cover_logo: None
+      # cover: false # a cover page
+      # back_cover: true # a back cover page
+      # cover_title: site_name
+      cover_subtitle: 配置文档
+      cover_logo: image/favicon.png
       #
       toc_title: 目录
-      #heading_shift: false
-      #toc_level: 3
-      #ordered_chapter_level: 2
+      # heading_shift: false
+      # toc_level: 3
+      # ordered_chapter_level: 2
       #
-      #render_js: true
-      #headless_chrome_path: chromedriver
+      render_js: true
+      headless_chrome_path: chromium
       #
       output_path: index.pdf
       enabled_if_env: ENABLE_PDF_EXPORT
-      #custom_template_path: TEMPLATES PATH
+      #
+      # debug_html: true
+      # show_anchors: true
+      # verbose: true
 
 extra:
+  #https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer
   generator: false
   social:
     - icon: fontawesome/brands/github
@@ -128,31 +147,25 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/sutqfx
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/tqfx/
-  alternate:
-    # Switch to English
+      link: https://linkedin.com/in/tqfx
+  alternate: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language
+    #Switch to English
     - name: English
       link: /en/
       lang: en
-  version:
+  version: # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning
     default: latest
 
-extra_css:
-#- https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
-  - css/default.css
-
 extra_javascript:
-# mathjax
-#- https://polyfill.io/v3/polyfill.min.js?features=es6
-  - javascripts/polyfill.js
-#- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/tex-mml-chtml.js
-# highlight
-#- https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
-  - javascripts/highlight.js
-# table
-#- https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - javascripts/tables.js
+  #mathjax
+  #https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#arithmatex
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  #table
+  #https://squidfunk.github.io/mkdocs-material/reference/data-tables/#sortable-tables
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - js/tablesort.js
 
 nav:
   - 使用:
