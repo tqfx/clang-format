@@ -1,8 +1,11 @@
 ---
-title: StatementMacros 
+title: StatementMacros
 ---
 
-# StatementMacros (`std::vector<std::string>`)
+## StatementMacros (`List of Strings`)
+
+??? info
+    clang-format 8
 
 宏的一个向量，应该被解释为完整的语句。
 

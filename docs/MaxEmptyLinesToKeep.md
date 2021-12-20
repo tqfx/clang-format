@@ -2,7 +2,10 @@
 title: MaxEmptyLinesToKeep
 ---
 
-# MaxEmptyLinesToKeep (`unsigned`)
+## MaxEmptyLinesToKeep (`Unsigned`)
+
+??? info
+    clang-format 3.7
 
 要保留的最大连续空行数。
 

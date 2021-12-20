@@ -2,7 +2,7 @@
 title: BasedOnStyle
 ---
 
-# BasedOnStyle (`string`)
+## BasedOnStyle (`string`)
 
 用于配置中未特别设置的所有选项的样式。用于配置中未特别设置的所有选项的样式。
 

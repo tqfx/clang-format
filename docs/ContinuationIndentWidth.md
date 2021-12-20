@@ -2,7 +2,10 @@
 title: ContinuationIndentWidth
 ---
 
-# ContinuationIndentWidth (`unsigned`)
+## ContinuationIndentWidth (`Unsigned`)
+
+??? info
+    clang-format 3.7
 
 连续行缩进宽度。
 

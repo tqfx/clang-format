@@ -2,7 +2,10 @@
 title: BreakStringLiterals
 ---
 
-# BreakStringLiterals (`bool`)
+## BreakStringLiterals (`Boolean`)
+
+??? info
+    clang-format 3.9
 
 允许在格式化时中断字符串文字。
 
@@ -18,5 +21,5 @@ title: BreakStringLiterals
 
     ```cpp
     const char* x =
-    "veryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongString";
+        "veryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongString";
     ```

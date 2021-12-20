@@ -2,6 +2,9 @@
 title: PenaltyBreakTemplateDeclaration
 ---
 
-# PenaltyBreakTemplateDeclaration (`unsigned`)
+## PenaltyBreakTemplateDeclaration (`Unsigned`)
 
-The penalty for breaking after template declaration.
+??? info
+    clang-format 7
+
+模板声明后中断的补偿。

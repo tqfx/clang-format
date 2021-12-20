@@ -2,7 +2,10 @@
 title: AlwaysBreakTemplateDeclarations
 ---
 
-# AlwaysBreakTemplateDeclarations (`BreakTemplateDeclarationsStyle`)
+## AlwaysBreakTemplateDeclarations (`BreakTemplateDeclarationsStyle`)
+
+??? info
+    clang-format 7
 
 要使用的模板声明中断样式。
 

@@ -2,7 +2,10 @@
 title: AllowShortEnumsOnASingleLine
 ---
 
-# AllowShortEnumsOnASingleLine (`bool`)
+## AllowShortEnumsOnASingleLine (`Boolean`)
+
+??? info
+    clang-format 12
 
 允许在单行上使用短的枚举。
 

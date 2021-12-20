@@ -2,20 +2,33 @@
 title: SpacesInAngles
 ---
 
-# SpacesInAngles (`bool`)
+## SpacesInAngles (`SpacesInAnglesStyle`)
 
-如果为 `true`，则在模板实参列表的 `<` 和 `>` 之前插入空格。
+??? info
+    clang-format 14
 
-=== "true"
+用于模板参数列表的 `SpacesInAnglesStyle`。
+
+可能的值：
+
+=== "Never"
+
+    `SIAS_Never`: 删除 `<` 之后和 `>` 之前的空格。
+
+    ```cpp
+    static_cast<int>(arg);
+    std::function<void(int)> fct;
+    ```
+
+=== "Always"
+
+    `SIAS_Always`: 在 `<` 之后和 `>` 之前添加空格。
 
     ```cpp
     static_cast< int >(arg);
     std::function< void(int) > fct;
     ```
 
-=== "false"
+=== "Leave"
 
-    ```cpp
-    static_cast<int>(arg);
-    std::function<void(int)> fct;
-    ```
+    `SIAS_Leave`: 如果存在空格，则在 `<` 之后和之前保留一个空格。 选项标准：`Cpp03` 优先。

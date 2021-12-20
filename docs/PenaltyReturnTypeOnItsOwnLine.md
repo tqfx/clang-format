@@ -2,6 +2,9 @@
 title: PenaltyReturnTypeOnItsOwnLine
 ---
 
-# PenaltyReturnTypeOnItsOwnLine (unsigned)
+## PenaltyReturnTypeOnItsOwnLine (Unsigned)
 
-Penalty for putting the return type of a function onto its own line.
+??? info
+    clang-format 3.7
+
+将函数的返回类型放在它自己的行上的补偿。

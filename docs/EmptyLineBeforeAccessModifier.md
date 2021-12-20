@@ -2,7 +2,10 @@
 title: EmptyLineBeforeAccessModifier
 ---
 
-# EmptyLineBeforeAccessModifier (`EmptyLineBeforeAccessModifierStyle`)
+## EmptyLineBeforeAccessModifier (`EmptyLineBeforeAccessModifierStyle`)
+
+??? info
+    clang-format 13
 
 定义在何种情况下在访问修饰符之前放置空行。
 
@@ -15,12 +18,12 @@ title: EmptyLineBeforeAccessModifier
     ```cpp
     struct foo {
     private:
-    int i;
+      int i;
     protected:
-    int j;
-    /* comment */
+      int j;
+      /* comment */
     public:
-    foo() {}
+      foo() {}
     private:
     protected:
     };
@@ -37,13 +40,13 @@ title: EmptyLineBeforeAccessModifier
     ```cpp
     struct foo {
     private:
-    int i;
+      int i;
 
     protected:
-    int j;
-    /* comment */
+      int j;
+      /* comment */
     public:
-    foo() {}
+      foo() {}
 
     private:
     protected:
@@ -57,14 +60,14 @@ title: EmptyLineBeforeAccessModifier
     ```cpp
     struct foo {
     private:
-    int i;
+      int i;
 
     protected:
-    int j;
-    /* comment */
+      int j;
+      /* comment */
 
     public:
-    foo() {}
+      foo() {}
 
     private:
 

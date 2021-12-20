@@ -2,7 +2,10 @@
 title: AlignConsecutiveAssignments
 ---
 
-# AlignConsecutiveAssignments (`AlignConsecutiveStyle`)
+## AlignConsecutiveAssignments (`AlignConsecutiveStyle`)
+
+??? info
+    clang-format 3.8
 
 对齐连续赋值的样式。
 

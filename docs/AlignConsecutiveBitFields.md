@@ -2,11 +2,14 @@
 title: AlignConsecutiveBitFields
 ---
 
-# AlignConsecutiveBitFields (`AlignConsecutiveStyle`)
+## AlignConsecutiveBitFields (`AlignConsecutiveStyle`)
+
+??? info
+    clang-format 11
 
 对齐连续位字段的样式。
 
-将连续行的位域分隔符对齐。这将导致如下格式:
+将连续行的位域分隔符对齐。这将导致如下格式：
 
 ```cpp
 int aaaa : 1;
@@ -22,7 +25,7 @@ int ccc  : 8;
 
 === "Consecutive"
 
-    `ACS_Consecutive`: 在连续的行上对齐位域。这将导致如下格式:
+    `ACS_Consecutive`: 在连续的行上对齐位域。这将导致如下格式：
 
     ```cpp
     int aaaa : 1;

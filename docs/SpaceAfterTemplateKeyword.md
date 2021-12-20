@@ -2,9 +2,12 @@
 title: SpaceAfterTemplateKeyword
 ---
 
-# SpaceAfterTemplateKeyword (`bool`)
+## SpaceAfterTemplateKeyword (`Boolean`)
 
-如果为 `true`，则在 `template` 关键字后面插入一个空格。
+??? info
+    clang-format 4
+
+如果为 `#!yml true`，则在 `template` 关键字后面插入一个空格。
 
 === "true"
 

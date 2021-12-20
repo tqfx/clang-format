@@ -2,9 +2,12 @@
 title: AlignConsecutiveMacros
 ---
 
-# AlignConsecutiveMacros (`AlignConsecutiveStyle`)
+## AlignConsecutiveMacros (`AlignConsecutiveStyle`)
 
-对齐连续宏定义的风格。
+??? info
+    clang-format 9
+
+对齐连续宏定义的样式。
 
 `Consecutive` 会产生如下格式：
 
@@ -24,7 +27,7 @@ title: AlignConsecutiveMacros
 
 === "Consecutive"
 
-    `ACS_Consecutive`: 在连续的行上对齐宏定义。这将导致如下格式:
+    `ACS_Consecutive`: 在连续的行上对齐宏定义。这将导致如下格式：
 
     ```cpp
     #define SHORT_NAME       42

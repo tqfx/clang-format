@@ -2,11 +2,14 @@
 title: NamespaceMacros
 ---
 
-# NamespaceMacros (`std::vector<std::string>`)
+## NamespaceMacros (`List of Strings`)
+
+??? info
+    clang-format 9
 
 用于打开命名空间块的宏的向量。
 
-这些应该是以下形式的宏:
+这些应该是以下形式的宏：
 
 ```cpp
 NAMESPACE(<namespace-name>, ...) {

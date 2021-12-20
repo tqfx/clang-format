@@ -2,9 +2,12 @@
 title: SpaceInEmptyParentheses
 ---
 
-# SpaceInEmptyParentheses (`bool`)
+## SpaceInEmptyParentheses (`Boolean`)
 
-如果为 `true`，可以在 `()` 中插入空格。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，可以在 `()` 中插入空格。
 
 === "true"
 

@@ -1,7 +1,10 @@
 ---
-title: PenaltyExcessCharacter 
+title: PenaltyExcessCharacter
 ---
 
-# PenaltyExcessCharacter (`unsigned`)
+## PenaltyExcessCharacter (`Unsigned`)
 
-The penalty for each character outside of the column limit.
+??? info
+    clang-format 3.7
+
+列限制之外的每个字符的补偿。

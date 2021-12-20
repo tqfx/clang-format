@@ -2,9 +2,12 @@
 title: SpaceBeforeCtorInitializerColon
 ---
 
-# SpaceBeforeCtorInitializerColon (`bool`)
+## SpaceBeforeCtorInitializerColon (`Boolean`)
 
-如果为 `false`，在构造函数初始化器冒号之前的空格将被删除。
+??? info
+    clang-format 7
+
+如果为 `#!yml false`，在构造函数初始化器冒号之前的空格将被删除。
 
 === "true"
 

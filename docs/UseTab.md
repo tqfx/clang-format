@@ -2,7 +2,10 @@
 title: UseTab
 ---
 
-# UseTab (`UseTabStyle`)
+## UseTab (`UseTabStyle`)
+
+??? info
+    clang-format 3.7
 
 在结果文件中使用制表符的方法。
 

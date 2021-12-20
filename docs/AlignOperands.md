@@ -2,9 +2,12 @@
 title: AlignOperands
 ---
 
-# AlignOperands (`OperandAlignmentStyle`)
+## AlignOperands (`OperandAlignmentStyle`)
 
-如果为 `true`，则水平对齐二进制和三元表达式的操作数。
+??? info
+    clang-format 12
+
+如果为 `#!yml true`，则水平对齐二进制和三元表达式的操作数。
 
 可能的值：
 
@@ -16,7 +19,7 @@ title: AlignOperands
 
     `OAS_Align`: 水平对齐二进制和三元表达式的操作数。
 
-    具体地说，它将一个需要在多行中分割的单个表达式的操作数对齐，例如:
+    具体地说，它将一个需要在多行中分割的单个表达式的操作数对齐，例如：
 
     ```cpp
     int aaa = bbbbbbbbbbbbbbb +

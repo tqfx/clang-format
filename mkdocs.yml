@@ -176,6 +176,7 @@ nav:
     - BasedOnStyle.md
     - AccessModifierOffset.md
     - AlignAfterOpenBracket.md
+    - AlignArrayOfStructures.md
     - AlignConsecutiveAssignments.md
     - AlignConsecutiveBitFields.md
     - AlignConsecutiveDeclarations.md
@@ -220,10 +221,12 @@ nav:
     - DeriveLineEnding.md
     - DerivePointerAlignment.md
     - DisableFormat.md
+    - EmptyLineAfterAccessModifier.md
     - EmptyLineBeforeAccessModifier.md
     - ExperimentalAutoDetectBinPacking.md
     - FixNamespaceComments.md
     - ForEachMacros.md
+    - IfMacros.md
     - IncludeBlocks.md
     - IncludeCategories.md
     - IncludeIsMainRegex.md
@@ -242,6 +245,7 @@ nav:
     - JavaScriptQuotes.md
     - JavaScriptWrapImports.md
     - KeepEmptyLinesAtTheStartOfBlocks.md
+    - LambdaBodyIndentation.md
     - Language.md
     - MacroBlockBegin.md
     - MacroBlockEnd.md
@@ -253,6 +257,8 @@ nav:
     - ObjCBreakBeforeNestedBlockParam.md
     - ObjCSpaceAfterProperty.md
     - ObjCSpaceBeforeProtocolList.md
+    - PPIndentWidth.md
+    - PackConstructorInitializers.md
     - PenaltyBreakAssignment.md
     - PenaltyBreakBeforeFirstCallParameter.md
     - PenaltyBreakComment.md
@@ -263,7 +269,10 @@ nav:
     - PenaltyIndentedWhitespace.md
     - PenaltyReturnTypeOnItsOwnLine.md
     - PointerAlignment.md
+    - QualifierAlignment.md
+    - QualifierOrder.md
     - RawStringFormats.md
+    - ReferenceAlignment.md
     - ReflowComments.md
     - ShortNamespaceLines.md
     - SortIncludes.md
@@ -279,6 +288,7 @@ nav:
     - SpaceBeforeCtorInitializerColon.md
     - SpaceBeforeInheritanceColon.md
     - SpaceBeforeParens.md
+    - SpaceBeforeParensOptions.md
     - SpaceBeforeRangeBasedForLoopColon.md
     - SpaceBeforeSquareBrackets.md
     - SpaceInEmptyBlock.md

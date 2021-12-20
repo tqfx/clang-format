@@ -4,7 +4,7 @@ title: 介绍
 
 [clang-format](https://clang.llvm.org/docs/ClangFormat.html) 位于 [`clang/tools/clang-format`](https://github.com/llvm/llvm-project/tree/main/clang/tools/clang-format)，可用于格式化 `C`/`C++`/`Java`/`JavaScript`/`Objective-C`/`Protobuf`/`C#` 代码。
 
-```
+```txt
 $ clang-format -help
 OVERVIEW: A tool to format C/C++/Java/JavaScript/JSON/Objective-C/Protobuf/C# code.
 

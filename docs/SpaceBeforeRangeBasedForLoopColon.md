@@ -2,9 +2,12 @@
 title: SpaceBeforeRangeBasedForLoopColon
 ---
 
-# SpaceBeforeRangeBasedForLoopColon (`bool`)
+## SpaceBeforeRangeBasedForLoopColon (`Boolean`)
 
-如果为 `false`，在基于范围的 `for loop` 冒号之前将删除空格。
+??? info
+    clang-format 7
+
+如果为 `#!yml false`，在基于范围的 `for loop` 冒号之前将删除空格。
 
 === "true"
 
@@ -12,7 +15,7 @@ title: SpaceBeforeRangeBasedForLoopColon
     for (auto v : values) {}
     ```
 
-=== "false"    
+=== "false"
 
     ```cpp
     for(auto v: values) {}

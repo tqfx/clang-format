@@ -2,7 +2,10 @@
 title: AlwaysBreakAfterReturnType
 ---
 
-# AlwaysBreakAfterReturnType (`ReturnTypeBreakingStyle`)
+## AlwaysBreakAfterReturnType (`ReturnTypeBreakingStyle`)
+
+??? info
+    clang-format 3.8
 
 函数声明返回要使用的类型中断样式。
 

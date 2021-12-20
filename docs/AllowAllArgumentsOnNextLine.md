@@ -1,10 +1,13 @@
 ---
-title: AllowAllArgumentsOnNextLine 
+title: AllowAllArgumentsOnNextLine
 ---
 
-# AllowAllArgumentsOnNextLine (`bool`)
+## AllowAllArgumentsOnNextLine (`Boolean`)
 
-如果函数调用或花括号的初始化列表不能放在一行中，则允许将所有参数放到下一行，即使 [BinPackArguments](../BinPackArguments) 为 `false`。
+??? info
+    clang-format 9
+
+如果函数调用或花括号的初始化列表不能放在一行中，则允许将所有参数放到下一行，即使 [BinPackArguments](../BinPackArguments) 为 `#!yml false`。
 
 === "true"
 

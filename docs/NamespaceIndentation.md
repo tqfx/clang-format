@@ -2,7 +2,10 @@
 title: NamespaceIndentation
 ---
 
-# NamespaceIndentation (`NamespaceIndentationKind`)
+## NamespaceIndentation (`NamespaceIndentationKind`)
+
+??? info
+    clang-format 3.7
 
 名称空间使用的缩进。
 

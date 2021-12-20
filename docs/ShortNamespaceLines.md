@@ -2,7 +2,10 @@
 title: ShortNamespaceLines
 ---
 
-# ShortNamespaceLines (`unsigned`)
+## ShortNamespaceLines (`Unsigned`)
+
+??? info
+    clang-format 14
 
 短名称空间所跨的未换行的最大行数。默认为 `1`。
 

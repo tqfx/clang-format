@@ -2,6 +2,9 @@
 title: PenaltyBreakBeforeFirstCallParameter
 ---
 
-# PenaltyBreakBeforeFirstCallParameter (`unsigned`)
+## PenaltyBreakBeforeFirstCallParameter (`Unsigned`)
 
-The penalty for breaking a function call after `call(`.
+??? info
+    clang-format 3.7
+
+`call(` 后中断函数调用的补偿。

@@ -2,7 +2,10 @@
 title: Standard
 ---
 
-# Standard (`LanguageStandard`)
+## Standard (`LanguageStandard`)
+
+??? info
+    clang-format 3.7
 
 解析和格式化与这个标准兼容的 `C++` 结构。
 

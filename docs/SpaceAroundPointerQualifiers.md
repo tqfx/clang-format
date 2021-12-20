@@ -2,7 +2,10 @@
 title: SpaceAroundPointerQualifiers
 ---
 
-# SpaceAroundPointerQualifiers (`SpaceAroundPointerQualifiersStyle`)
+## SpaceAroundPointerQualifiers (`SpaceAroundPointerQualifiersStyle`)
+
+??? info
+    clang-format 12
 
 定义在何种情况下在指针限定符之前或之后放置空格
 
@@ -10,7 +13,7 @@ title: SpaceAroundPointerQualifiers
 
 === "Default"
 
-    `SAPQ_Default`: 不要确保指针限定符周围有空格，而是使用 `PointerAlignment`。
+    `SAPQ_Default`: 不要确保指针限定符周围有空格，而是使用 [PointerAlignment](../PointerAlignment)。
 
     ```yaml
     PointerAlignment: Left                 PointerAlignment: Right

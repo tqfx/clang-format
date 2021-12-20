@@ -2,9 +2,12 @@
 title: IndentRequires
 ---
 
-# IndentRequires (`bool`)
+## IndentRequires (`Boolean`)
 
-在模板中缩进 `requires` 子句
+??? info
+    clang-format 13
+
+在模板中缩进 `#!cpp requires` 子句
 
 === "true"
 

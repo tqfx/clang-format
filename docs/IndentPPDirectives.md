@@ -2,7 +2,10 @@
 title: IndentPPDirectives
 ---
 
-# IndentPPDirectives (`PPDirectiveIndentStyle`)
+## IndentPPDirectives (`PPDirectiveIndentStyle`)
+
+??? info
+    clang-format 6
 
 要使用的预处理器指令缩进样式。
 

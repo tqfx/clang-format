@@ -2,9 +2,12 @@
 title: Language
 ---
 
-# Language (`LanguageKind`)
+## Language (`LanguageKind`)
 
-语言，此格式样式的目标是。
+??? info
+    clang-format 3.5
+
+语言，这种格式风格是针对的。
 
 可能的值：
 
@@ -34,7 +37,7 @@ title: Language
 
 === "Proto"
 
-    `LK_Proto`: 应该用于协议缓冲区 (https://developers.google.com/protocol-buffers/)。
+    `LK_Proto`: 应该用于协议缓冲区 (https://developers.google.com/protocol-buffers)。
 
 === "TableGen"
 
@@ -42,4 +45,4 @@ title: Language
 
 === "TextProto"
 
-    `LK_TextProto`: 应该用于文本格式的协议缓冲区消息 (https://developers.google.com/protocol-buffers/)。
+    `LK_TextProto`: 应该用于文本格式的协议缓冲区消息 (https://developers.google.com/protocol-buffers)。

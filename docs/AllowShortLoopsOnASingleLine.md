@@ -2,6 +2,9 @@
 title: AllowShortLoopsOnASingleLine
 ---
 
-# AllowShortLoopsOnASingleLine (`bool`)
+## AllowShortLoopsOnASingleLine (`Boolean`)
 
-如果为 `true` ，则 `while (true) continue;` 可以放在一行上。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true` ，则 `#!cpp while (true) continue;` 可以放在一行上。

@@ -2,9 +2,12 @@
 title: BreakBeforeTernaryOperators
 ---
 
-# BreakBeforeTernaryOperators (`bool`)
+## BreakBeforeTernaryOperators (`Boolean`)
 
-如果为 `true`，将在换行符之后放置三元操作符。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，将在换行符之后放置三元操作符。
 
 === "true"
 

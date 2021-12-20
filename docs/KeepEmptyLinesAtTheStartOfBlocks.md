@@ -2,9 +2,12 @@
 title: KeepEmptyLinesAtTheStartOfBlocks
 ---
 
-# KeepEmptyLinesAtTheStartOfBlocks (`bool`)
+## KeepEmptyLinesAtTheStartOfBlocks (`Boolean`)
 
-如果为 `true`，则保留块开头的空行。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，则保留块开头的空行。
 
 === "true"
 

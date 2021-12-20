@@ -2,7 +2,10 @@
 title: JavaScriptWrapImports
 ---
 
-# JavaScriptWrapImports (bool)
+## JavaScriptWrapImports (`boolean`)
+
+??? info
+    clang-format 3.9
 
 是否包装 `JavaScript` 的导入/导出语句。
 

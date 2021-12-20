@@ -2,8 +2,10 @@
 title: JavaScriptQuotes
 ---
 
-# JavaScriptQuotes (JavaScriptQuoteStyle)
+## JavaScriptQuotes (JavaScriptQuoteStyle)
 
+??? info
+    clang-format 3.9
 
 `JavaScript` 字符串使用的 `JavaScriptQuoteStyle`。
 

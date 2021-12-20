@@ -2,7 +2,10 @@
 title: StatementAttributeLikeMacros
 ---
 
-# StatementAttributeLikeMacros (`std::vector<std::string>`)
+## StatementAttributeLikeMacros (`List of Strings`)
+
+??? info
+    clang-format 12
 
 在语句前面被忽略的宏，就像它们是一个属性一样。这样它们就不会被解析为标识符，例如 `Qts emit`。
 

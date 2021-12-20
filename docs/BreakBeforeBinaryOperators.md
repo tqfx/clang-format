@@ -2,9 +2,12 @@
 title: BreakBeforeBinaryOperators
 ---
 
-# BreakBeforeBinaryOperators (`BinaryOperatorStyle`)
+## BreakBeforeBinaryOperators (`BinaryOperatorStyle`)
 
-包装二元运算符的方法。
+??? info
+    clang-format 3.6
+
+二元运算符换行的方式。
 
 可能的值：
 

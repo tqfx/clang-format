@@ -2,6 +2,9 @@
 title: PenaltyBreakAssignment
 ---
 
-# PenaltyBreakAssignment (`unsigned`)
+## PenaltyBreakAssignment (`Unsigned`)
 
-The penalty for breaking around an assignment operator.
+??? info
+    clang-format 5
+
+突破赋值运算符的补偿。

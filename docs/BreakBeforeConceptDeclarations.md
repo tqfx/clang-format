@@ -2,9 +2,12 @@
 title: BreakBeforeConceptDeclarations
 ---
 
-# BreakBeforeConceptDeclarations (`bool`)
+## BreakBeforeConceptDeclarations (`Boolean`)
 
-如果为 `true`，`concept` 将被放置到新行。
+??? info
+    clang-format 13
+
+如果为 `#!yml true`，`#!cpp concept` 将被放置到新行。
 
 === "true"
 

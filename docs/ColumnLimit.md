@@ -2,7 +2,10 @@
 title: ColumnLimit
 ---
 
-# ColumnLimit (`unsigned`)
+## ColumnLimit (`Unsigned`)
+
+??? info
+    clang-format 3.7
 
 列的限制。
 

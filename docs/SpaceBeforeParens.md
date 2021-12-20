@@ -2,7 +2,10 @@
 title: SpaceBeforeParens
 ---
 
-# SpaceBeforeParens (`SpaceBeforeParensOptions`)
+## SpaceBeforeParens (`SpaceBeforeParensOptions`)
+
+??? info
+    clang-format 3.5
 
 定义在何种情况下在开括号前放空格。
 
@@ -22,7 +25,7 @@ title: SpaceBeforeParens
 
 === "ControlStatements"
 
-    `SBPO_ControlStatements`: 只在控制语句关键字(`for`/`if`/`while`...)之后的开括号前放一个空格。
+    `SBPO_ControlStatements`: 只在控制语句关键字(`#!cpp for`/`#!cpp if`/`#!cpp while`...)之后的开括号前放一个空格。
 
     ```cpp
     void f() {

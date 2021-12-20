@@ -2,9 +2,12 @@
 title: AllowShortBlocksOnASingleLine
 ---
 
-# AllowShortBlocksOnASingleLine (`ShortBlockStyle`)
+## AllowShortBlocksOnASingleLine (`ShortBlockStyle`)
 
-依赖于值，`while (true) {continue;` 可以放在一行上。
+??? info
+    clang-format 11
+
+依赖于值，`#!cpp while (true) {continue;` 可以放在一行上。
 
 可能的值：
 

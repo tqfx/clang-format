@@ -2,6 +2,9 @@
 title: PenaltyBreakComment
 ---
 
-# PenaltyBreakComment (`unsigned`)
+## PenaltyBreakComment (`Unsigned`)
 
-The penalty for each line break introduced inside a comment.
+??? info
+    clang-format 3.7
+
+注释中引入的每个换行符的补偿。

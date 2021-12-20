@@ -2,7 +2,10 @@
 title: IndentWrappedFunctionNames
 ---
 
-# IndentWrappedFunctionNames (`bool`)
+## IndentWrappedFunctionNames (`Boolean`)
+
+??? info
+    clang-format 3.7
 
 如果函数定义或声明包装在类型之后，则缩进。
 

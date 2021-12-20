@@ -2,7 +2,10 @@
 title: BitFieldColonSpacing
 ---
 
-# BitFieldColonSpacing (`BitFieldColonSpacingStyle`)
+## BitFieldColonSpacing (`BitFieldColonSpacingStyle`)
+
+??? info
+    clang-format 12
 
 用于位字段的 `BitFieldColonSpacingStyle`。
 
@@ -10,7 +13,7 @@ title: BitFieldColonSpacing
 
 === "Both"
 
-    `BFCS_Both`: 每边加一个空格:
+    `BFCS_Both`: 每边加一个空格。
 
     ```cpp
     unsigned bf : 2;

@@ -2,6 +2,9 @@
 title: PenaltyIndentedWhitespace
 ---
 
-# PenaltyIndentedWhitespace (`unsigned`)
+## PenaltyIndentedWhitespace (`Unsigned`)
 
-Penalty for each character of whitespace indentation (counted relative to leading non-whitespace column).
+??? info
+    clang-format 12
+
+空格缩进的每个字符的补偿（相对于前导非空格列计算）。

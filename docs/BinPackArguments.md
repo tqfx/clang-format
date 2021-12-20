@@ -2,9 +2,12 @@
 title: BinPackArguments
 ---
 
-# BinPackArguments (`bool`)
+## BinPackArguments (`Boolean`)
 
-如果为 `false`，函数调用的参数要么都在同一行，要么各一行。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml false`，函数调用的参数要么都在同一行，要么各一行。
 
 === "true"
 

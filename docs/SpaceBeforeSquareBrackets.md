@@ -2,10 +2,12 @@
 title: SpaceBeforeSquareBrackets
 ---
 
-# SpaceBeforeSquareBrackets (`bool`)
+## SpaceBeforeSquareBrackets (`Boolean`)
 
+??? info
+    clang-format 11
 
-如果为 `true`，空格将在 `[` 之前。不受影响。只有第一个 `[` 会被加一个空格。
+如果为 `#!yml true`，空格将在 `[` 之前。不受影响。只有第一个 `[` 会被加一个空格。
 
 === "true"
 

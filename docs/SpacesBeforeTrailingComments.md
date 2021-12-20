@@ -2,8 +2,10 @@
 title: SpacesBeforeTrailingComments
 ---
 
-# SpacesBeforeTrailingComments (`unsigned`)
+## SpacesBeforeTrailingComments (`Unsigned`)
 
+??? info
+    clang-format 3.7
 
 尾行注释(`//` -注释)之前的空格数。
 

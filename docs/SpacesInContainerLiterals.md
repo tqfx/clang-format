@@ -2,9 +2,12 @@
 title: SpacesInContainerLiterals
 ---
 
-# SpacesInContainerLiterals (`bool`)
+## SpacesInContainerLiterals (`Boolean`)
 
-如果为 `true`，则在容器字面量(例如 `ObjC` 和 `Javascript` 数组和 `dict` 字面量)中插入空格。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，则在容器字面量(例如 `ObjC` 和 `Javascript` 数组和 `dict` 字面量)中插入空格。
 
 === "true"
 

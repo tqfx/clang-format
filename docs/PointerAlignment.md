@@ -2,7 +2,10 @@
 title: PointerAlignment
 ---
 
-# PointerAlignment (`PointerAlignmentStyle`)
+## PointerAlignment (`PointerAlignmentStyle`)
+
+??? info
+    clang-format 3.7
 
 指针和引用对齐样式。
 

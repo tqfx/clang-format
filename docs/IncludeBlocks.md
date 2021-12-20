@@ -2,15 +2,18 @@
 title: IncludeBlocks
 ---
 
-# IncludeBlocks (`IncludeBlocksStyle`)
+## IncludeBlocks (`IncludeBlocksStyle`)
 
-根据这个值，可以将多个 `#include` 块按类别排序。
+??? info
+    clang-format 7
+
+根据这个值，可以将多个 `#!cpp #include` 块按类别排序。
 
 可能的值：
 
 === "Preserve"
 
-    `IBS_Preserve`: 分别对每个 `#include` 块进行排序。
+    `IBS_Preserve`: 分别对每个 `#!cpp #include` 块进行排序。
 
     ```cpp
     #include "b.h"               into      #include "b.h"
@@ -21,7 +24,7 @@ title: IncludeBlocks
 
 === "Merge"
 
-    `IBS_Merge`: 将多个`#include`块合并在一起，并按一个排序。
+    `IBS_Merge`: 将多个 `#!cpp #include` 块合并在一起，并按一个排序。
 
     ```cpp
     #include "b.h"               into      #include "a.h"
@@ -32,7 +35,7 @@ title: IncludeBlocks
 
 === "Regroup"
 
-    `IBS_Regroup`: 将多个 `#include` 块合并在一起，并按一个排序。然后根据类别优先级分组。[IncludeCategories](../IncludeCategories)。
+    `IBS_Regroup`: 将多个 `#!cpp #include` 块合并在一起，并按一个排序。然后根据类别优先级分组。参考 [IncludeCategories](../IncludeCategories)。
 
     ```cpp
     #include "b.h"               into      #include "a.h"

@@ -2,11 +2,14 @@
 title: Cpp11BracedListStyle
 ---
 
-# Cpp11BracedListStyle (`bool`)
+## Cpp11BracedListStyle (`Boolean`)
 
-如果为 `true`，将带大括号的列表格式化为最适合 `C++11` 带大括号的列表。
+??? info
+    clang-format 3.4
 
-重要区别:
+如果为 `#!yml true`，将带大括号的列表格式化为最适合 `C++11` 带大括号的列表。
+
+重要区别：
 
 - 括号内没有空格。
 - 在右括号之前不能换行。

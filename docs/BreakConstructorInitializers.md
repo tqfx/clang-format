@@ -2,7 +2,10 @@
 title: BreakConstructorInitializers
 ---
 
-# BreakConstructorInitializers (`BreakConstructorInitializersStyle`)
+## BreakConstructorInitializers (`BreakConstructorInitializersStyle`)
+
+??? info
+    clang-format 5
 
 要使用的构造函数初始化式样式。
 

@@ -2,9 +2,12 @@
 title: SpaceBeforeCpp11BracedList
 ---
 
-# SpaceBeforeCpp11BracedList (`bool`)
+## SpaceBeforeCpp11BracedList (`Boolean`)
 
-如果为 `true`，则在用于初始化对象的 `C++11` 大括号列表之前插入一个空格(在前面的标识符或类型之后)。
+??? info
+    clang-format 7
+
+如果为 `#!yml true`，则在用于初始化对象的 `C++11` 大括号列表之前插入一个空格(在前面的标识符或类型之后)。
 
 === "true"
 

@@ -2,9 +2,12 @@
 title: SpacesInConditionalStatement
 ---
 
-# SpacesInConditionalStatement (`bool`)
+## SpacesInConditionalStatement (`Boolean`)
 
-如果为 `true`，则在 `if`/`for`/`switch`/`while` 条件周围插入空格。
+??? info
+    clang-format 11
+
+如果为 `#!yml true`，则在 `#!cpp if`/`#!cpp for`/`#!cpp switch`/`#!cpp while` 条件周围插入空格。
 
 === "true"
 

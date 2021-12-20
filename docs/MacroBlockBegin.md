@@ -2,7 +2,10 @@
 title: MacroBlockBegin
 ---
 
-# MacroBlockBegin (`std::string`)
+## MacroBlockBegin (`String`)
+
+??? info
+    clang-format 3.7
 
 匹配开始块的宏的正则表达式。
 
@@ -18,11 +21,11 @@ NS_TABLE_.*_END$"
 
     ```cpp
     NS_MAP_BEGIN
-        foo();
+      foo();
     NS_MAP_END
 
     NS_TABLE_HEAD
-        bar();
+      bar();
     NS_TABLE_FOO_END
     ```
 

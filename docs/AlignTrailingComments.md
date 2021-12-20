@@ -2,9 +2,12 @@
 title: AlignTrailingComments
 ---
 
-# AlignTrailingComments (`bool`)
+## AlignTrailingComments (`Boolean`)
 
-如果为 `true`，则对齐尾随注释。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，则对齐尾随注释。
 
 === "true"
 

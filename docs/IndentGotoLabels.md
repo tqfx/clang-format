@@ -2,11 +2,14 @@
 title: IndentGotoLabels
 ---
 
-# IndentGotoLabels (`bool`)
+## IndentGotoLabels (`Boolean`)
 
-缩进 `goto` 标签。
+??? info
+    clang-format 10
 
-当为 `false` 时，`goto` 标签被向左刷新。
+缩进 `#!cpp goto` 标签。
+
+当为 `#!yml false` 时，`#!cpp goto` 标签被推到最左侧。
 
 === "true"
 

@@ -2,9 +2,12 @@
 title: IndentExternBlock
 ---
 
-# IndentExternBlock (`IndentExternBlockStyle`)
+## IndentExternBlock (`IndentExternBlockStyle`)
 
-`IndentExternBlockStyle` 是 `extern` 块的缩进类型。
+??? info
+    clang-format 12
+
+`IndentExternBlockStyle` 是 `#!cpp extern` 块的缩进类型。
 
 可能的值：
 
@@ -51,6 +54,6 @@ title: IndentExternBlock
 
     ```cpp
     extern "C" {
-    void foo();
+        void foo();
     }
     ```

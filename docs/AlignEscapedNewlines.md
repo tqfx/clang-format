@@ -2,7 +2,10 @@
 title: AlignEscapedNewlines
 ---
 
-# AlignEscapedNewlines (`EscapedNewlineAlignmentStyle`)
+## AlignEscapedNewlines (`EscapedNewlineAlignmentStyle`)
+
+??? info
+    clang-format 5
 
 在转义的换行符中对齐反斜杠的选项。
 

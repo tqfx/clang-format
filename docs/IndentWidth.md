@@ -2,7 +2,10 @@
 title: IndentWidth
 ---
 
-IndentWidth (`unsigned`)
+IndentWidth (`Unsigned`)
+
+??? info
+    clang-format 3.7
 
 用于缩进的列数。
 

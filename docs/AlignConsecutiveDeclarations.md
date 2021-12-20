@@ -2,11 +2,14 @@
 title: AlignConsecutiveDeclarations
 ---
 
-# AlignConsecutiveDeclarations (`AlignConsecutiveStyle`)
+## AlignConsecutiveDeclarations (`AlignConsecutiveStyle`)
 
-对齐连续声明的风格。
+??? info
+    clang-format 3.8
 
-将连续行的声明名称对齐。这将导致如下格式:
+对齐连续声明的样式。
+
+将连续行的声明名称对齐。这将导致如下格式：
 
 ```cpp
 int         aaaa = 12;
@@ -22,7 +25,7 @@ std::string ccc;
 
 === "Consecutive"
 
-    `ACS_Consecutive`: 在连续的行上对齐声明。这将导致如下格式:
+    `ACS_Consecutive`: 在连续的行上对齐声明。这将导致如下格式：
 
     ```cpp
     int         aaaa = 12;

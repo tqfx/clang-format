@@ -2,9 +2,12 @@
 title: ReflowComments
 ---
 
-# ReflowComments (`bool`)
+## ReflowComments (`Boolean`)
 
-如果为 `true`，`clang-format` 将尝试重新输入注释。
+??? info
+    clang-format 4
+
+如果为 `#!cpp true`，`clang-format` 将尝试重新输入注释。
 
 === "false"
 

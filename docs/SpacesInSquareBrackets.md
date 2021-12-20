@@ -2,9 +2,12 @@
 title: SpacesInSquareBrackets
 ---
 
-# SpacesInSquareBrackets (`bool`)
+## SpacesInSquareBrackets (`Boolean`)
 
-如果为 `true`，将在 `[` 和之前 `]` 后面插入空格。没有参数或未指定大小的数组声明的匿名函数将不受影响。
+??? info
+    clang-format 3.7
+
+如果为 `#!yml true`，将在 `[` 和之前 `]` 后面插入空格。没有参数或未指定大小的数组声明的匿名函数将不受影响。
 
 === "true"
 

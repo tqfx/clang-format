@@ -2,15 +2,17 @@
 title: SpacesInParentheses
 ---
 
-# SpacesInParentheses (`bool`)
+## SpacesInParentheses (`Boolean`)
 
-如果为 `true`，则在前后插入空格。
+??? info
+    clang-format 3.7
 
+如果为 `#!yml true`，则在前后插入空格。
 
 === "true"
 
     ```cpp
-    t f( Deleted & ) & = delete; 
+    t f( Deleted & ) & = delete;
     ```
 
 === "false"

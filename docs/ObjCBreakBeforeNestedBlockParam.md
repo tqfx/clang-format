@@ -2,7 +2,10 @@
 title: ObjCBreakBeforeNestedBlockParam
 ---
 
-# ObjCBreakBeforeNestedBlockParam (`bool`)
+## ObjCBreakBeforeNestedBlockParam (`Boolean`)
+
+??? info
+    clang-format 12
 
 当函数调用中有嵌套的块形参时，将形参列表分成几行。
 

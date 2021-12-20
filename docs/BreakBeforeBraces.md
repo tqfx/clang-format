@@ -2,7 +2,10 @@
 title: BreakBeforeBraces
 ---
 
-# BreakBeforeBraces (`BraceBreakingStyle`)
+## BreakBeforeBraces (`BraceBreakingStyle`)
+
+??? info
+    clang-format 3.7
 
 要使用的大括号中断样式。
 
@@ -15,41 +18,41 @@ title: BreakBeforeBraces
     ```cpp
     namespace N {
     enum E {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C {
     public:
-    C();
+      C();
     };
 
     bool baz(int i) {
-    try {
+      try {
         do {
-        switch (i) {
-        case 1: {
+          switch (i) {
+          case 1: {
             foobar();
             break;
-        }
-        default: {
+          }
+          default: {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    } catch (...) {
+      } catch (...) {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b) {
-    if (b) {
+      if (b) {
         baz(2);
-    } else {
+      } else {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -64,44 +67,44 @@ title: BreakBeforeBraces
     namespace N
     {
     enum E {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C
     {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try {
+      try {
         do {
-        switch (i) {
-        case 1: {
+          switch (i) {
+          case 1: {
             foobar();
             break;
-        }
-        default: {
+          }
+          default: {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    } catch (...) {
+      } catch (...) {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b)
     {
-    if (b) {
+      if (b) {
         baz(2);
-    } else {
+      } else {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -116,44 +119,44 @@ title: BreakBeforeBraces
     namespace N {
     enum E
     {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C
     {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try {
+      try {
         do {
-        switch (i) {
-        case 1: {
+          switch (i) {
+          case 1: {
             foobar();
             break;
-        }
-        default: {
+          }
+          default: {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    } catch (...) {
+      } catch (...) {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b)
     {
-    if (b) {
+      if (b) {
         baz(2);
-    } else {
+      } else {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -162,50 +165,50 @@ title: BreakBeforeBraces
 
 === "Stroustrup"
 
-    `BS_Stroustrup`: 与 `Attach` 类似，但在函数定义、`catch` 和 `else` 之前断开。
+    `BS_Stroustrup`: 与 `Attach` 类似，但在函数定义、`#!cpp catch` 和 `#!cpp else` 之前断开。
 
     ```cpp
     namespace N {
     enum E {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try {
+      try {
         do {
-        switch (i) {
-        case 1: {
+          switch (i) {
+          case 1: {
             foobar();
             break;
-        }
-        default: {
+          }
+          default: {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    }
-    catch (...) {
+      }
+      catch (...) {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b)
     {
-    if (b) {
+      if (b) {
         baz(2);
-    }
-    else {
+      }
+      else {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -221,54 +224,54 @@ title: BreakBeforeBraces
     {
     enum E
     {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C
     {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try
-    {
+      try
+      {
         do
         {
-        switch (i)
-        {
-        case 1:
-        {
+          switch (i)
+          {
+          case 1:
+          {
             foobar();
             break;
-        }
-        default:
-        {
+          }
+          default:
+          {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    }
-    catch (...)
-    {
+      }
+      catch (...)
+      {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b)
     {
-    if (b)
-    {
+      if (b)
+      {
         baz(2);
-    }
-    else
-    {
+      }
+      else
+      {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -281,26 +284,26 @@ title: BreakBeforeBraces
 
     ```cpp
     namespace N
-    {
+      {
     enum E
-    {
-    E1,
-    E2,
-    };
+      {
+      E1,
+      E2,
+      };
 
     class C
-    {
+      {
     public:
-    C();
-    };
+      C();
+      };
 
     bool baz(int i)
-    {
-    try
+      {
+      try
         {
         do
-        {
-        switch (i)
+          {
+          switch (i)
             {
             case 1:
             {
@@ -312,30 +315,30 @@ title: BreakBeforeBraces
             break;
             }
             }
-        } while (--i);
+          } while (--i);
         return true;
         }
-    catch (...)
+      catch (...)
         {
         handleError();
         return false;
         }
-    }
+      }
 
     void foo(bool b)
-    {
-    if (b)
+      {
+      if (b)
         {
         baz(2);
         }
-    else
+      else
         {
         baz(5);
         }
-    }
+      }
 
     void bar() { foo(true); }
-    } // namespace N
+      } // namespace N
     ```
 
 === "GNU"
@@ -347,54 +350,54 @@ title: BreakBeforeBraces
     {
     enum E
     {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C
     {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try
+      try
         {
-        do
+          do
             {
-            switch (i)
+              switch (i)
                 {
                 case 1:
-                {
+                  {
                     foobar();
                     break;
-                }
+                  }
                 default:
-                {
+                  {
                     break;
-                }
+                  }
                 }
             }
-        while (--i);
-        return true;
+          while (--i);
+          return true;
         }
-    catch (...)
+      catch (...)
         {
-        handleError();
-        return false;
+          handleError();
+          return false;
         }
     }
 
     void foo(bool b)
     {
-    if (b)
+      if (b)
         {
-        baz(2);
+          baz(2);
         }
-    else
+      else
         {
-        baz(5);
+          baz(5);
         }
     }
 
@@ -409,43 +412,43 @@ title: BreakBeforeBraces
     ```cpp
     namespace N {
     enum E {
-    E1,
-    E2,
+      E1,
+      E2,
     };
 
     class C {
     public:
-    C();
+      C();
     };
 
     bool baz(int i)
     {
-    try {
+      try {
         do {
-        switch (i) {
-        case 1: {
+          switch (i) {
+          case 1: {
             foobar();
             break;
-        }
-        default: {
+          }
+          default: {
             break;
-        }
-        }
+          }
+          }
         } while (--i);
         return true;
-    } catch (...) {
+      } catch (...) {
         handleError();
         return false;
-    }
+      }
     }
 
     void foo(bool b)
     {
-    if (b) {
+      if (b) {
         baz(2);
-    } else {
+      } else {
         baz(5);
-    }
+      }
     }
 
     void bar() { foo(true); }
@@ -453,5 +456,5 @@ title: BreakBeforeBraces
     ```
 
 === "Custom"
-    `BS_Custom`: 在 [BraceWrapping](../BraceWrapping)中配置每个单独的大括号。
-    
+
+    `BS_Custom`: 在 [BraceWrapping](../BraceWrapping) 中配置每个单独的大括号。

@@ -2,6 +2,9 @@
 title: PenaltyBreakString
 ---
 
-# PenaltyBreakString (`unsigned`)
+## PenaltyBreakString (`Unsigned`)
 
-The penalty for each line break introduced inside a string literal.
+??? info
+    clang-format 3.7
+
+在字符串文字中引入的每个换行符的补偿。

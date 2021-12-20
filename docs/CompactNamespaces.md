@@ -2,9 +2,12 @@
 title: CompactNamespaces
 ---
 
-# CompactNamespaces (`bool`)
+## CompactNamespaces (`Boolean`)
 
-如果为 `true`，连续的名称空间声明将在同一行上。如果为 `false`，则每个名称空间都声明在一个新的行中。
+??? info
+    clang-format 5
+
+如果为 `#!yml true`，连续的名称空间声明将在同一行上。如果为 `#!yml false`，则每个名称空间都声明在一个新的行中。
 
 === "true"
 
@@ -22,7 +25,7 @@ title: CompactNamespaces
     }
     ```
 
-如果它不能放在一行中，溢出的名称空间将被包装:
+如果它不能放在一行中，溢出的名称空间将被包装：
 
 ```cpp
 namespace Foo { namespace Bar {

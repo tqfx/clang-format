@@ -2,7 +2,10 @@
 title: BreakInheritanceList
 ---
 
-# BreakInheritanceList (`BreakInheritanceListStyle`)
+## BreakInheritanceList (`BreakInheritanceListStyle`)
+
+??? info
+    clang-format 7
 
 要使用的继承列表样式。
 
@@ -20,7 +23,7 @@ title: BreakInheritanceList
     ```
 
 === "BeforeComma"
-    
+
     `BILS_BeforeComma`: 在冒号和逗号之前中断继承列表，并将逗号与冒号对齐。
 
     ```cpp

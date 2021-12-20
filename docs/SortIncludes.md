@@ -2,9 +2,12 @@
 title: SortIncludes
 ---
 
-# SortIncludes (SortIncludesOptions)
+## SortIncludes (SortIncludesOptions)
 
-控制 `clang-format` 是否以及如何排序 `#include`。如果没有，则包含永远不会排序。如果不区分大小写，则包含以`ascii`或不区分大小写的方式排序。如果区分大小写，则包含按字母或区分大小写的方式排序。
+??? info
+    clang-format 4
+
+控制 `clang-format` 是否以及如何排序 `#!cpp #include`。如果没有，则包含永远不会排序。如果不区分大小写，则包含以`ascii`或不区分大小写的方式排序。如果区分大小写，则包含按字母或区分大小写的方式排序。
 
 可能的值：
 
@@ -22,7 +25,7 @@ title: SortIncludes
 
 === "CaseSensitive"
 
-    `SI_CaseSensitive`: `include` 以大小写敏感的方式排序。
+    `SI_CaseSensitive`: `#!cpp include` 以大小写敏感的方式排序。
 
     ```cpp
     #include "A/B.h"
@@ -34,7 +37,7 @@ title: SortIncludes
 
 === "CaseInsensitive"
 
-    `SI_CaseInsensitive`: `include` 以不区分字母或大小写的方式排序。
+    `SI_CaseInsensitive`: `#!cpp include` 以不区分字母或大小写的方式排序。
 
     ```cpp
     #include "A/B.h"
