@@ -2,11 +2,11 @@
 title: 介绍
 ---
 
-[clang-format](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) 位于 `clang/tools/clang-format` 中，可用于格式化 `C`/`C++`/`Java`/`JavaScript`/`Objective-C`/`Protobuf`/`C#` 代码。
+[clang-format](https://clang.llvm.org/docs/ClangFormat.html) 位于 [`clang/tools/clang-format`](https://github.com/llvm/llvm-project/tree/main/clang/tools/clang-format)，可用于格式化 `C`/`C++`/`Java`/`JavaScript`/`Objective-C`/`Protobuf`/`C#` 代码。
 
-```bash
-$ clang-format --help
-OVERVIEW: A tool to format C/C++/Java/JavaScript/Objective-C/Protobuf/C# code.
+```
+$ clang-format -help
+OVERVIEW: A tool to format C/C++/Java/JavaScript/JSON/Objective-C/Protobuf/C# code.
 
 If no arguments are specified, it formats the code from standard input
 and writes the result to the standard output.
@@ -21,6 +21,13 @@ OPTIONS:
 Clang-format options:
 
   --Werror                   - If set, changes formatting warnings to errors
+  --Wno-error=<value>        - If set don't error out on the specified warning type.
+    =unknown                 -   If set, unknown format options are only warned about.
+                                 This can be used to enable formatting, even if the
+                                 configuration contains unknown (newer) options.
+                                 Use with caution, as this might lead to dramatically
+                                 differing format depending on an option being
+                                 supported or not.
   --assume-filename=<string> - Override filename used to determine the language.
                                When reading from stdin, clang-format assumes this
                                filename to determine the language.
@@ -34,7 +41,9 @@ Clang-format options:
                                -style=file, but can not find the .clang-format
                                file to use.
                                Use -fallback-style=none to skip formatting.
-  --ferror-limit=<uint>      - Set the maximum number of clang-format errors to emit before stopping (0 = no limit). Used only with --dry-run or -n
+  --ferror-limit=<uint>      - Set the maximum number of clang-format errors to
+                               emit before stopping (0 = no limit). Used only
+                               with --dry-run or -n
   -i                         - Inplace edit <file>s, if specified.
   --length=<uint>            - Format a range of this length (in bytes).
                                Multiple ranges can be formatted by specifying
@@ -55,9 +64,10 @@ Clang-format options:
                                several -offset and -length pairs.
                                Can only be used with one input file.
   --output-replacements-xml  - Output replacements as XML.
-  --sort-includes            - If set, overrides the include sorting behavior determined by the SortIncludes style flag
+  --sort-includes            - If set, overrides the include sorting behavior
+                               determined by the SortIncludes style flag
   --style=<string>           - Coding style, currently supports:
-                                 LLVM, GNU, Google, Chromium, Microsoft, Mozilla, WebKit.
+                                 LLVM, Google, Chromium, Mozilla, WebKit.
                                Use -style=file to load style configuration from
                                .clang-format file located in one of the parent
                                directories of the source file (or current
@@ -73,4 +83,3 @@ Generic Options:
   --help-list                - Display list of available options (--help-list-hidden for more)
   --version                  - Display the version of this program
 ```
-
