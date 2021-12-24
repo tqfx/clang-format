@@ -30,6 +30,7 @@ BraceWrapping:
   SplitEmptyNamespace: false
 ColumnLimit: 0
 IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
 NamespaceIndentation: All
 ObjCBlockIndentWidth: 4
 ReflowComments: false

@@ -29,6 +29,7 @@ BraceWrapping:
 ColumnLimit: 0
 ConstructorInitializerIndentWidth: 2
 ContinuationIndentWidth: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
 NamespaceIndentation: All
 ObjCBlockIndentWidth: 2
 ReflowComments: false
