@@ -10,8 +10,8 @@ AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
 AlwaysBreakTemplateDeclarations: Yes
-BreakInheritanceList: AfterColon
-BreakConstructorInitializers: AfterColon
+BreakInheritanceList: BeforeComma
+BreakConstructorInitializers: BeforeComma
 ColumnLimit: 0
 IndentWidth: 4
 NamespaceIndentation: All

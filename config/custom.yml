@@ -12,8 +12,8 @@ AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
 AlwaysBreakTemplateDeclarations: Yes
 BreakBeforeBraces: Custom
-BreakInheritanceList: AfterColon
-BreakConstructorInitializers: AfterColon
+BreakInheritanceList: BeforeComma
+BreakConstructorInitializers: BeforeComma
 BraceWrapping:
   AfterEnum: true
   AfterClass: true
