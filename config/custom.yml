@@ -25,9 +25,6 @@ BraceWrapping:
   AfterControlStatement: true
   BeforeElse: true
   BeforeCatch: true
-  SplitEmptyRecord: false
-  SplitEmptyFunction: false
-  SplitEmptyNamespace: false
 ColumnLimit: 0
 IndentWidth: 4
 KeepEmptyLinesAtTheStartOfBlocks: false
