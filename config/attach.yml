@@ -3,12 +3,6 @@ BasedOnStyle: LLVM
 AccessModifierOffset: -4
 AlignConsecutiveMacros: true
 AlignEscapedNewlines: Left
-AlignOperands: AlignAfterOperator
-AllowAllArgumentsOnNextLine: false
-AllowAllConstructorInitializersOnNextLine: false
-AllowAllParametersOfDeclarationOnNextLine: false
-AllowShortFunctionsOnASingleLine: None
-AllowShortLambdasOnASingleLine: None
 AlwaysBreakTemplateDeclarations: Yes
 BreakInheritanceList: BeforeComma
 BreakConstructorInitializers: BeforeComma
