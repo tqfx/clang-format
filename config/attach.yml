@@ -8,7 +8,6 @@ BreakInheritanceList: BeforeComma
 BreakConstructorInitializers: BeforeComma
 ColumnLimit: 0
 IndentWidth: 4
-NamespaceIndentation: All
 ObjCBlockIndentWidth: 4
 ReflowComments: false
 SortIncludes: false
