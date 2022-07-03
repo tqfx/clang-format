@@ -1,7 +1,6 @@
 ---
 BasedOnStyle: LLVM
 AccessModifierOffset: -4
-AlignConsecutiveMacros: true
 AlignEscapedNewlines: Left
 AlwaysBreakTemplateDeclarations: Yes
 BreakInheritanceList: BeforeComma
