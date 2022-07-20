@@ -1,6 +1,7 @@
 ---
 BasedOnStyle: LLVM
 AlignEscapedNewlines: Left
+AlignTrailingComments: false
 AlwaysBreakTemplateDeclarations: Yes
 BreakBeforeBraces: Custom
 BreakInheritanceList: BeforeComma
