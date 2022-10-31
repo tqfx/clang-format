@@ -9,7 +9,7 @@ repo_name: GitHub
 repo_url: https://github.com/tqfx/clang-format
 remote_name: origin
 remote_branch: gh-pages
-edit_uri: edit/master/docs
+edit_uri: edit/main/docs
 
 docs_dir: docs
 site_dir: site
